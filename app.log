@@ -1,0 +1,573 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< erdalguda:main >---------------------------
+[INFO] Building main 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.4.5:run (default-cli) > test-compile @ main >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ main ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ main ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ main ---
+[INFO] skip non existing resourceDirectory /Users/burak/Desktop/Erdal Guda/main/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ main ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.4.5:run (default-cli) < test-compile @ main <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.4.5:run (default-cli) @ main ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2025-07-25T15:36:00.424+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.MainApplication           : Starting MainApplication using Java 22.0.1 with PID 33953 (/Users/burak/Desktop/Erdal Guda/main/target/classes started by burak in /Users/burak/Desktop/Erdal Guda/main)
+2025-07-25T15:36:00.425+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.MainApplication           : The following 1 profile is active: "development"
+2025-07-25T15:36:00.490+03:00  INFO 33953 --- [main] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-25T15:36:00.490+03:00  INFO 33953 --- [main] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-25T15:36:01.258+03:00  INFO 33953 --- [main] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-25T15:36:01.423+03:00  INFO 33953 --- [main] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141 ms. Found 9 JPA repository interfaces.
+2025-07-25T15:36:02.088+03:00  INFO 33953 --- [main] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 6767 (http)
+2025-07-25T15:36:02.098+03:00  INFO 33953 --- [main] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-25T15:36:02.098+03:00  INFO 33953 --- [main] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-25T15:36:02.125+03:00  INFO 33953 --- [main] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-25T15:36:02.125+03:00  INFO 33953 --- [main] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1634 ms
+2025-07-25T15:36:02.244+03:00  INFO 33953 --- [main] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-25T15:36:02.273+03:00  INFO 33953 --- [main] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-07-25T15:36:02.289+03:00  INFO 33953 --- [main] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-25T15:36:02.484+03:00  INFO 33953 --- [main] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-25T15:36:02.573+03:00  INFO 33953 --- [main] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-25T15:36:02.696+03:00  INFO 33953 --- [main] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b871f72
+2025-07-25T15:36:02.698+03:00  INFO 33953 --- [main] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-25T15:36:02.751+03:00  INFO 33953 --- [main] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-25T15:36:03.544+03:00  INFO 33953 --- [main] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-25T15:36:03.791+03:00  INFO 33953 --- [main] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-25T15:36:04.147+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Veritabanı migration başlatılıyor...
+2025-07-25T15:36:04.618+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Varsayılan admin kullanıcısı zaten ADMIN rolüne sahip
+2025-07-25T15:36:04.642+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Sistemdeki tüm kullanıcılar ve rolleri:
+2025-07-25T15:36:04.644+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Kullanıcı: erdalguda, Rol: ADMIN
+2025-07-25T15:36:04.773+03:00  INFO 33953 --- [main] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-25T15:36:08.151+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.service.OcrService        : 🔄 OCR config'den devre dışı bırakıldı, mock mode aktif
+2025-07-25T15:36:08.931+03:00  WARN 33953 --- [main] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-25T15:36:08.954+03:00  WARN 33953 --- [main] [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 2b3c6ef1-fa89-4bfd-b982-63ef48e31402
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-25T15:36:08.958+03:00  INFO 33953 --- [main] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-25T15:36:08.985+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : SecurityConfig yapılandırması başlatılıyor - 3 ROL SİSTEMİ
+2025-07-25T15:36:09.184+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : Yetkilendirme kuralları yapılandırıldı:
+2025-07-25T15:36:09.184+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - ADMIN: Tüm modüller
+2025-07-25T15:36:09.185+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - USTA: Müşteriler, Siparişler
+2025-07-25T15:36:09.185+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - MUHASEBECI: Müşteriler, Siparişler
+2025-07-25T15:36:09.186+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : SecurityFilterChain yapılandırması tamamlandı - JWT Filter aktif
+2025-07-25T15:36:09.203+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : CORS yapılandırması tamamlandı - Tüm localhost portları ve Netlify için izin verildi
+2025-07-25T15:36:09.394+03:00  INFO 33953 --- [main] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-25T15:36:09.419+03:00  INFO 33953 --- [main] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 6767 (http) with context path '/'
+2025-07-25T15:36:09.430+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.MainApplication           : Started MainApplication in 9.518 seconds (process running for 9.963)
+2025-07-25T15:36:09.432+03:00  INFO 33953 --- [main] [   scheduling-1] e.main.service.CacheEvictionService      : 📊 Dashboard istatistikleri cache'i temizlendi (6 saatlik periyot)
+2025-07-25T15:36:09.432+03:00  INFO 33953 --- [main] [   scheduling-1] e.main.service.CacheEvictionService      : 📋 Son siparişler cache'i temizlendi (saatlik periyot)
+2025-07-25T15:36:16.272+03:00  INFO 33953 --- [main] [nio-6767-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-25T15:36:16.273+03:00  INFO 33953 --- [main] [nio-6767-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-25T15:36:16.278+03:00  INFO 33953 --- [main] [nio-6767-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-07-25T15:36:16.389+03:00  INFO 33953 --- [main] [nio-6767-exec-1] e.main.service.CacheEvictionService      : 👤 Yeni müşteri nedeniyle dashboard cache'i temizlendi
+2025-07-25T15:36:16.398+03:00  INFO 33953 --- [main] [onPool-worker-1] erdalguda.main.service.EmailService      : 📧 Hoş geldin email'i gönderme işlemi başlatıldı: Final Debug
+2025-07-25T15:36:24.283+03:00  INFO 33953 --- [main] [onPool-worker-1] erdalguda.main.service.EmailService      : ✅ Hoş geldin emaili BAŞARIYLA gönderildi: Final Debug, Email: final@test.com
+2025-07-25T15:36:25.698+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🔄 OCR devre dışı, mock data döndürülüyor
+2025-07-25T15:36:25.701+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🔍 OCR Text parsing başlatıldı. Text uzunluğu: 245
+2025-07-25T15:36:25.703+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🎯 Match #1: 'measured data
+head' = '57.9'
+2025-07-25T15:36:25.703+03:00  WARN 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : ❌ Tanınmayan ölçü adı: 'measured data
+head'
+2025-07-25T15:36:25.703+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🎯 Match #2: 'neck' = '41.7'
+2025-07-25T15:36:25.703+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'neck' -> 'Boyun' = 41.7 cm
+2025-07-25T15:36:25.703+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🎯 Match #3: 'shoulder' = '55.4'
+2025-07-25T15:36:25.704+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'shoulder' -> 'Omuz' = 55.4 cm
+2025-07-25T15:36:25.704+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🎯 Match #4: 'chest' = '99.9'
+2025-07-25T15:36:25.704+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'chest' -> 'Göğüs' = 99.9 cm
+2025-07-25T15:36:25.704+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🎯 Match #5: 'waist' = '92.5'
+2025-07-25T15:36:25.704+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'waist' -> 'Bel' = 92.5 cm
+2025-07-25T15:36:25.704+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🎯 Match #6: 'hip' = '99.1'
+2025-07-25T15:36:25.704+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'hip' -> 'Kalça' = 99.1 cm
+2025-07-25T15:36:25.704+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🎯 Match #7: 'l arm' = '31.8'
+2025-07-25T15:36:25.704+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'l arm' -> 'Sol Kol' = 31.8 cm
+2025-07-25T15:36:25.704+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🎯 Match #8: 'r arm' = '33.8'
+2025-07-25T15:36:25.704+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'r arm' -> 'Sağ Kol' = 33.8 cm
+2025-07-25T15:36:25.704+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🎯 Match #9: 'l thigh' = '52.3'
+2025-07-25T15:36:25.704+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'l thigh' -> 'Sol Bacak' = 52.3 cm
+2025-07-25T15:36:25.704+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🎯 Match #10: 'r thigh' = '52.2'
+2025-07-25T15:36:25.705+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'r thigh' -> 'Sağ Bacak' = 52.2 cm
+2025-07-25T15:36:25.705+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🎯 Match #11: 'l calf' = '38.9'
+2025-07-25T15:36:25.705+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'l calf' -> 'Sol Baldır' = 38.9 cm
+2025-07-25T15:36:25.705+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🎯 Match #12: 'r calf' = '38.9'
+2025-07-25T15:36:25.705+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'r calf' -> 'Sağ Baldır' = 38.9 cm
+2025-07-25T15:36:25.705+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : 🎯 Match #13: 'elbow length' = '78.5'
+2025-07-25T15:36:25.705+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'elbow length' -> 'Dirsek Uzunluğu' = 78.5 cm
+2025-07-25T15:36:25.705+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.OcrService        : ✅ Parsing tamamlandı. 13 pattern match, 12 ölçü çıkarıldı
+2025-07-25T15:36:25.706+03:00  INFO 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Müşteri 20 için 12 ölçü işleniyor
+2025-07-25T15:36:25.724+03:00  INFO 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Yeni ölçü oluşturuldu: Sol Bacak = 52.3 cm
+2025-07-25T15:36:25.736+03:00  WARN 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:36:25.736+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.
+2025-07-25T15:36:25.741+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Boyun - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.741+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü işlenirken hata: Boyun = 41.7, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.746+03:00  WARN 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:36:25.746+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.
+2025-07-25T15:36:25.746+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Sol Baldır - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.746+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü işlenirken hata: Sol Baldır = 38.9, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.751+03:00  WARN 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:36:25.751+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.
+2025-07-25T15:36:25.751+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Dirsek Uzunluğu - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.751+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü işlenirken hata: Dirsek Uzunluğu = 78.5, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.756+03:00  WARN 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:36:25.756+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.
+2025-07-25T15:36:25.757+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Omuz - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.757+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü işlenirken hata: Omuz = 55.4, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.760+03:00  WARN 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:36:25.760+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.
+2025-07-25T15:36:25.761+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Sağ Bacak - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.761+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü işlenirken hata: Sağ Bacak = 52.2, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.763+03:00  WARN 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:36:25.763+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.
+2025-07-25T15:36:25.764+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Bel - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.764+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü işlenirken hata: Bel = 92.5, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.767+03:00  WARN 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:36:25.767+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.
+2025-07-25T15:36:25.768+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Sol Kol - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.768+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü işlenirken hata: Sol Kol = 31.8, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.771+03:00  WARN 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:36:25.771+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.
+2025-07-25T15:36:25.771+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Sağ Baldır - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.771+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü işlenirken hata: Sağ Baldır = 38.9, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.775+03:00  WARN 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:36:25.775+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.
+2025-07-25T15:36:25.775+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Göğüs - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.775+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü işlenirken hata: Göğüs = 99.9, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.779+03:00  WARN 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:36:25.779+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.
+2025-07-25T15:36:25.779+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Kalça - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.779+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü işlenirken hata: Kalça = 99.1, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.783+03:00  WARN 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:36:25.784+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.
+2025-07-25T15:36:25.784+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Sağ Kol - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.784+03:00 ERROR 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Ölçü işlenirken hata: Sağ Kol = 33.8, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(20) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:36:25.784+03:00  INFO 33953 --- [main] [nio-6767-exec-2] e.main.service.MeasurementService        : Toplam 1 ölçü başarıyla işlendi
+2025-07-25T15:36:45.858+03:00  INFO 33953 --- [main] [nio-6767-exec-4] erdalguda.main.security.JwtAuthFilter    : Token çözümlendi, kullanıcı: erdalguda
+2025-07-25T15:36:45.858+03:00  INFO 33953 --- [main] [nio-6767-exec-3] erdalguda.main.security.JwtAuthFilter    : Token çözümlendi, kullanıcı: erdalguda
+2025-07-25T15:36:45.873+03:00  INFO 33953 --- [main] [nio-6767-exec-4] erdalguda.main.security.JwtAuthFilter    : Admin kullanıcısı bulundu: erdalguda
+2025-07-25T15:36:45.873+03:00  INFO 33953 --- [main] [nio-6767-exec-3] erdalguda.main.security.JwtAuthFilter    : Admin kullanıcısı bulundu: erdalguda
+2025-07-25T15:36:45.876+03:00  INFO 33953 --- [main] [nio-6767-exec-4] erdalguda.main.service.JwtService        : Token'dan çıkarılan yetkiler: [ROLE_ADMIN, ROLE_USTA, ROLE_MUHASEBECI]
+2025-07-25T15:36:45.876+03:00  INFO 33953 --- [main] [nio-6767-exec-3] erdalguda.main.service.JwtService        : Token'dan çıkarılan yetkiler: [ROLE_ADMIN, ROLE_USTA, ROLE_MUHASEBECI]
+2025-07-25T15:36:45.876+03:00  INFO 33953 --- [main] [nio-6767-exec-4] erdalguda.main.security.JwtAuthFilter    : Kullanıcı erdalguda için roller:
+2025-07-25T15:36:45.876+03:00  INFO 33953 --- [main] [nio-6767-exec-3] erdalguda.main.security.JwtAuthFilter    : Kullanıcı erdalguda için roller:
+2025-07-25T15:36:45.877+03:00  INFO 33953 --- [main] [nio-6767-exec-4] erdalguda.main.security.JwtAuthFilter    : Rol: ROLE_ADMIN
+2025-07-25T15:36:45.877+03:00  INFO 33953 --- [main] [nio-6767-exec-3] erdalguda.main.security.JwtAuthFilter    : Rol: ROLE_ADMIN
+2025-07-25T15:36:45.877+03:00  INFO 33953 --- [main] [nio-6767-exec-4] erdalguda.main.security.JwtAuthFilter    : Rol: ROLE_USTA
+2025-07-25T15:36:45.877+03:00  INFO 33953 --- [main] [nio-6767-exec-3] erdalguda.main.security.JwtAuthFilter    : Rol: ROLE_USTA
+2025-07-25T15:36:45.877+03:00  INFO 33953 --- [main] [nio-6767-exec-4] erdalguda.main.security.JwtAuthFilter    : Rol: ROLE_MUHASEBECI
+2025-07-25T15:36:45.877+03:00  INFO 33953 --- [main] [nio-6767-exec-3] erdalguda.main.security.JwtAuthFilter    : Rol: ROLE_MUHASEBECI
+2025-07-25T15:36:45.878+03:00  INFO 33953 --- [main] [nio-6767-exec-3] erdalguda.main.security.JwtAuthFilter    : Kimlik doğrulama başarılı: erdalguda
+2025-07-25T15:36:45.878+03:00  INFO 33953 --- [main] [nio-6767-exec-4] erdalguda.main.security.JwtAuthFilter    : Kimlik doğrulama başarılı: erdalguda
+2025-07-25T15:37:12.091+03:00  INFO 33953 --- [main] [nio-6767-exec-9] e.main.service.CacheEvictionService      : 👤 Yeni müşteri nedeniyle dashboard cache'i temizlendi
+2025-07-25T15:37:12.095+03:00  INFO 33953 --- [main] [onPool-worker-2] erdalguda.main.service.EmailService      : 📧 Hoş geldin email'i gönderme işlemi başlatıldı: Clean Test
+2025-07-25T15:37:14.156+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🔄 OCR devre dışı, mock data döndürülüyor
+2025-07-25T15:37:14.157+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🔍 OCR Text parsing başlatıldı. Text uzunluğu: 245
+2025-07-25T15:37:14.158+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🎯 Match #1: 'measured data
+head' = '57.9'
+2025-07-25T15:37:14.158+03:00  WARN 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : ❌ Tanınmayan ölçü adı: 'measured data
+head'
+2025-07-25T15:37:14.158+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🎯 Match #2: 'neck' = '41.7'
+2025-07-25T15:37:14.158+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'neck' -> 'Boyun' = 41.7 cm
+2025-07-25T15:37:14.158+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🎯 Match #3: 'shoulder' = '55.4'
+2025-07-25T15:37:14.158+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'shoulder' -> 'Omuz' = 55.4 cm
+2025-07-25T15:37:14.158+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🎯 Match #4: 'chest' = '99.9'
+2025-07-25T15:37:14.158+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'chest' -> 'Göğüs' = 99.9 cm
+2025-07-25T15:37:14.158+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🎯 Match #5: 'waist' = '92.5'
+2025-07-25T15:37:14.158+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'waist' -> 'Bel' = 92.5 cm
+2025-07-25T15:37:14.158+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🎯 Match #6: 'hip' = '99.1'
+2025-07-25T15:37:14.158+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'hip' -> 'Kalça' = 99.1 cm
+2025-07-25T15:37:14.158+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🎯 Match #7: 'l arm' = '31.8'
+2025-07-25T15:37:14.159+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'l arm' -> 'Sol Kol' = 31.8 cm
+2025-07-25T15:37:14.159+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🎯 Match #8: 'r arm' = '33.8'
+2025-07-25T15:37:14.159+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'r arm' -> 'Sağ Kol' = 33.8 cm
+2025-07-25T15:37:14.159+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🎯 Match #9: 'l thigh' = '52.3'
+2025-07-25T15:37:14.159+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'l thigh' -> 'Sol Bacak' = 52.3 cm
+2025-07-25T15:37:14.160+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🎯 Match #10: 'r thigh' = '52.2'
+2025-07-25T15:37:14.160+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'r thigh' -> 'Sağ Bacak' = 52.2 cm
+2025-07-25T15:37:14.160+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🎯 Match #11: 'l calf' = '38.9'
+2025-07-25T15:37:14.160+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'l calf' -> 'Sol Baldır' = 38.9 cm
+2025-07-25T15:37:14.160+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🎯 Match #12: 'r calf' = '38.9'
+2025-07-25T15:37:14.160+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'r calf' -> 'Sağ Baldır' = 38.9 cm
+2025-07-25T15:37:14.160+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : 🎯 Match #13: 'elbow length' = '78.5'
+2025-07-25T15:37:14.160+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : ✅ Ölçü eklendi: 'elbow length' -> 'Dirsek Uzunluğu' = 78.5 cm
+2025-07-25T15:37:14.160+03:00  INFO 33953 --- [main] [io-6767-exec-10] erdalguda.main.service.OcrService        : ✅ Parsing tamamlandı. 13 pattern match, 12 ölçü çıkarıldı
+2025-07-25T15:37:14.160+03:00  INFO 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Müşteri 21 için 12 ölçü işleniyor
+2025-07-25T15:37:14.167+03:00  INFO 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Yeni ölçü oluşturuldu: Sol Bacak = 52.3 cm
+2025-07-25T15:37:14.170+03:00  WARN 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:37:14.170+03:00 ERROR 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.
+2025-07-25T15:37:14.171+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Boyun - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.171+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü işlenirken hata: Boyun = 41.7, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.175+03:00  WARN 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:37:14.175+03:00 ERROR 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.
+2025-07-25T15:37:14.175+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Sol Baldır - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.176+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü işlenirken hata: Sol Baldır = 38.9, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.180+03:00  WARN 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:37:14.180+03:00 ERROR 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.
+2025-07-25T15:37:14.180+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Dirsek Uzunluğu - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.180+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü işlenirken hata: Dirsek Uzunluğu = 78.5, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.184+03:00  WARN 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:37:14.184+03:00 ERROR 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.
+2025-07-25T15:37:14.184+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Omuz - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.184+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü işlenirken hata: Omuz = 55.4, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.188+03:00  WARN 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:37:14.188+03:00 ERROR 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.
+2025-07-25T15:37:14.190+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Sağ Bacak - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.190+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü işlenirken hata: Sağ Bacak = 52.2, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.193+03:00  WARN 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:37:14.195+03:00 ERROR 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.
+2025-07-25T15:37:14.195+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Bel - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.195+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü işlenirken hata: Bel = 92.5, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.202+03:00  WARN 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:37:14.202+03:00 ERROR 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.
+2025-07-25T15:37:14.202+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Sol Kol - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.202+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü işlenirken hata: Sol Kol = 31.8, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.206+03:00  WARN 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:37:14.206+03:00 ERROR 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.
+2025-07-25T15:37:14.207+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Sağ Baldır - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.207+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü işlenirken hata: Sağ Baldır = 38.9, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.212+03:00  WARN 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:37:14.212+03:00 ERROR 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.
+2025-07-25T15:37:14.212+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Göğüs - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.212+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü işlenirken hata: Göğüs = 99.9, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.218+03:00  WARN 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:37:14.218+03:00 ERROR 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.
+2025-07-25T15:37:14.219+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Kalça - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.219+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü işlenirken hata: Kalça = 99.1, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.223+03:00  WARN 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23505
+2025-07-25T15:37:14.223+03:00 ERROR 33953 --- [main] [io-6767-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.
+2025-07-25T15:37:14.224+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü oluşturma/güncelleme hatası: Sağ Kol - could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.224+03:00 ERROR 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Ölçü işlenirken hata: Sağ Kol = 33.8, Hata: could not execute statement [ERROR: duplicate key value violates unique constraint "ukj4c17h3x24gig2cd2eel7s85g"
+  Detail: Key (customer_id)=(21) already exists.] [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; SQL [insert into measurements (created_at,customer_id,region_name,unit,updated_at,value) values (?,?,?,?,?,?)]; constraint [ukj4c17h3x24gig2cd2eel7s85g]
+2025-07-25T15:37:14.224+03:00  INFO 33953 --- [main] [io-6767-exec-10] e.main.service.MeasurementService        : Toplam 1 ölçü başarıyla işlendi
+2025-07-25T15:37:18.998+03:00  INFO 33953 --- [main] [onPool-worker-2] erdalguda.main.service.EmailService      : ✅ Hoş geldin emaili BAŞARIYLA gönderildi: Clean Test, Email: clean@test.com
+2025-07-25T15:37:39.938+03:00  INFO 33953 --- [main] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-07-25T15:37:39.955+03:00  INFO 33953 --- [main] [       Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-25T15:37:39.969+03:00  INFO 33953 --- [main] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-25T15:37:39.982+03:00  INFO 33953 --- [main] [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-25T15:37:39.992+03:00  INFO 33953 --- [main] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-25T15:37:39.997+03:00  INFO 33953 --- [main] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2025-07-25T15:37:40.353+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.MainApplication           : Starting MainApplication using Java 22.0.1 with PID 33953 (/Users/burak/Desktop/Erdal Guda/main/target/classes started by burak in /Users/burak/Desktop/Erdal Guda/main)
+2025-07-25T15:37:40.358+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.MainApplication           : The following 1 profile is active: "development"
+2025-07-25T15:37:40.719+03:00  INFO 33953 --- [main] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-25T15:37:40.749+03:00  INFO 33953 --- [main] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 9 JPA repository interfaces.
+2025-07-25T15:37:40.991+03:00  INFO 33953 --- [main] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 6767 (http)
+2025-07-25T15:37:40.994+03:00  INFO 33953 --- [main] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-25T15:37:40.994+03:00  INFO 33953 --- [main] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-25T15:37:41.015+03:00  INFO 33953 --- [main] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-25T15:37:41.015+03:00  INFO 33953 --- [main] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 643 ms
+2025-07-25T15:37:41.059+03:00  INFO 33953 --- [main] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-25T15:37:41.063+03:00  INFO 33953 --- [main] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-25T15:37:41.094+03:00  INFO 33953 --- [main] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-25T15:37:41.095+03:00  INFO 33953 --- [main] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-07-25T15:37:41.126+03:00  INFO 33953 --- [main] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@27bf255d
+2025-07-25T15:37:41.127+03:00  INFO 33953 --- [main] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-07-25T15:37:41.139+03:00  INFO 33953 --- [main] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 14.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-25T15:37:41.435+03:00  INFO 33953 --- [main] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-25T15:37:41.505+03:00  WARN 33953 --- [main] [  restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2025-07-25T15:37:41.506+03:00  WARN 33953 --- [main] [  restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk_measurements_customer_region" of relation "measurements" does not exist, skipping
+2025-07-25T15:37:41.774+03:00  INFO 33953 --- [main] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-25T15:37:42.287+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Veritabanı migration başlatılıyor...
+2025-07-25T15:37:42.357+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Varsayılan admin kullanıcısı zaten ADMIN rolüne sahip
+2025-07-25T15:37:42.368+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Sistemdeki tüm kullanıcılar ve rolleri:
+2025-07-25T15:37:42.368+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Kullanıcı: erdalguda, Rol: ADMIN
+2025-07-25T15:37:42.668+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.service.OcrService        : 🔄 OCR config'den devre dışı bırakıldı, mock mode aktif
+2025-07-25T15:37:42.757+03:00  WARN 33953 --- [main] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-25T15:37:42.768+03:00  WARN 33953 --- [main] [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7e163608-3b03-45ca-84a8-ffac16d988d4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-25T15:37:42.771+03:00  INFO 33953 --- [main] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-25T15:37:42.775+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : SecurityConfig yapılandırması başlatılıyor - 3 ROL SİSTEMİ
+2025-07-25T15:37:42.914+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : Yetkilendirme kuralları yapılandırıldı:
+2025-07-25T15:37:42.914+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - ADMIN: Tüm modüller
+2025-07-25T15:37:42.914+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - USTA: Müşteriler, Siparişler
+2025-07-25T15:37:42.914+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - MUHASEBECI: Müşteriler, Siparişler
+2025-07-25T15:37:42.915+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : SecurityFilterChain yapılandırması tamamlandı - JWT Filter aktif
+2025-07-25T15:37:42.925+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : CORS yapılandırması tamamlandı - Tüm localhost portları ve Netlify için izin verildi
+2025-07-25T15:37:42.984+03:00  INFO 33953 --- [main] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-25T15:37:42.995+03:00  INFO 33953 --- [main] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 6767 (http) with context path '/'
+2025-07-25T15:37:43.003+03:00  INFO 33953 --- [main] [   scheduling-1] e.main.service.CacheEvictionService      : 📊 Dashboard istatistikleri cache'i temizlendi (6 saatlik periyot)
+2025-07-25T15:37:43.004+03:00  INFO 33953 --- [main] [   scheduling-1] e.main.service.CacheEvictionService      : 📋 Son siparişler cache'i temizlendi (saatlik periyot)
+2025-07-25T15:37:43.004+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.MainApplication           : Started MainApplication in 2.807 seconds (process running for 103.539)
+2025-07-25T15:37:43.006+03:00  INFO 33953 --- [main] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-25T15:37:46.772+03:00  INFO 33953 --- [main] [nio-6767-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-25T15:37:46.773+03:00  INFO 33953 --- [main] [nio-6767-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-25T15:37:46.774+03:00  INFO 33953 --- [main] [nio-6767-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-07-25T15:37:46.814+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.security.JwtAuthFilter    : Token çözümlendi, kullanıcı: erdalguda
+2025-07-25T15:37:46.814+03:00  INFO 33953 --- [main] [nio-6767-exec-1] erdalguda.main.security.JwtAuthFilter    : Token çözümlendi, kullanıcı: erdalguda
+2025-07-25T15:37:46.824+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.security.JwtAuthFilter    : Admin kullanıcısı bulundu: erdalguda
+2025-07-25T15:37:46.825+03:00  INFO 33953 --- [main] [nio-6767-exec-1] erdalguda.main.security.JwtAuthFilter    : Admin kullanıcısı bulundu: erdalguda
+2025-07-25T15:37:46.827+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.service.JwtService        : Token'dan çıkarılan yetkiler: [ROLE_ADMIN, ROLE_USTA, ROLE_MUHASEBECI]
+2025-07-25T15:37:46.827+03:00  INFO 33953 --- [main] [nio-6767-exec-1] erdalguda.main.service.JwtService        : Token'dan çıkarılan yetkiler: [ROLE_ADMIN, ROLE_USTA, ROLE_MUHASEBECI]
+2025-07-25T15:37:46.828+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.security.JwtAuthFilter    : Kullanıcı erdalguda için roller:
+2025-07-25T15:37:46.828+03:00  INFO 33953 --- [main] [nio-6767-exec-1] erdalguda.main.security.JwtAuthFilter    : Kullanıcı erdalguda için roller:
+2025-07-25T15:37:46.828+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.security.JwtAuthFilter    : Rol: ROLE_ADMIN
+2025-07-25T15:37:46.828+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.security.JwtAuthFilter    : Rol: ROLE_USTA
+2025-07-25T15:37:46.828+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.security.JwtAuthFilter    : Rol: ROLE_MUHASEBECI
+2025-07-25T15:37:46.828+03:00  INFO 33953 --- [main] [nio-6767-exec-1] erdalguda.main.security.JwtAuthFilter    : Rol: ROLE_ADMIN
+2025-07-25T15:37:46.828+03:00  INFO 33953 --- [main] [nio-6767-exec-1] erdalguda.main.security.JwtAuthFilter    : Rol: ROLE_USTA
+2025-07-25T15:37:46.828+03:00  INFO 33953 --- [main] [nio-6767-exec-1] erdalguda.main.security.JwtAuthFilter    : Rol: ROLE_MUHASEBECI
+2025-07-25T15:37:46.828+03:00  INFO 33953 --- [main] [nio-6767-exec-2] erdalguda.main.security.JwtAuthFilter    : Kimlik doğrulama başarılı: erdalguda
+2025-07-25T15:37:46.828+03:00  INFO 33953 --- [main] [nio-6767-exec-1] erdalguda.main.security.JwtAuthFilter    : Kimlik doğrulama başarılı: erdalguda
+2025-07-25T15:38:10.739+03:00  INFO 33953 --- [main] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-07-25T15:38:10.749+03:00  INFO 33953 --- [main] [       Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-25T15:38:10.754+03:00  INFO 33953 --- [main] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-25T15:38:10.765+03:00  INFO 33953 --- [main] [       Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-25T15:38:10.767+03:00  INFO 33953 --- [main] [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-07-25T15:38:10.771+03:00  INFO 33953 --- [main] [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2025-07-25T15:38:11.112+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.MainApplication           : Starting MainApplication using Java 22.0.1 with PID 33953 (/Users/burak/Desktop/Erdal Guda/main/target/classes started by burak in /Users/burak/Desktop/Erdal Guda/main)
+2025-07-25T15:38:11.117+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.MainApplication           : The following 1 profile is active: "development"
+2025-07-25T15:38:11.383+03:00  INFO 33953 --- [main] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-25T15:38:11.415+03:00  INFO 33953 --- [main] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 9 JPA repository interfaces.
+2025-07-25T15:38:11.590+03:00  INFO 33953 --- [main] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 6767 (http)
+2025-07-25T15:38:11.593+03:00  INFO 33953 --- [main] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-25T15:38:11.593+03:00  INFO 33953 --- [main] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-25T15:38:11.608+03:00  INFO 33953 --- [main] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-25T15:38:11.608+03:00  INFO 33953 --- [main] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 477 ms
+2025-07-25T15:38:11.641+03:00  INFO 33953 --- [main] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-25T15:38:11.646+03:00  INFO 33953 --- [main] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-25T15:38:11.669+03:00  INFO 33953 --- [main] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-25T15:38:11.671+03:00  INFO 33953 --- [main] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-07-25T15:38:11.713+03:00  INFO 33953 --- [main] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@857d969
+2025-07-25T15:38:11.714+03:00  INFO 33953 --- [main] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-07-25T15:38:11.728+03:00  INFO 33953 --- [main] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 14.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-25T15:38:11.971+03:00  INFO 33953 --- [main] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-25T15:38:12.178+03:00  INFO 33953 --- [main] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-25T15:38:12.758+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Veritabanı migration başlatılıyor...
+2025-07-25T15:38:12.838+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Varsayılan admin kullanıcısı zaten ADMIN rolüne sahip
+2025-07-25T15:38:12.847+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Sistemdeki tüm kullanıcılar ve rolleri:
+2025-07-25T15:38:12.847+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Kullanıcı: erdalguda, Rol: ADMIN
+2025-07-25T15:38:13.118+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.service.OcrService        : 🔄 OCR config'den devre dışı bırakıldı, mock mode aktif
+2025-07-25T15:38:13.202+03:00  WARN 33953 --- [main] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-25T15:38:13.212+03:00  WARN 33953 --- [main] [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 858f5920-fddf-45a9-b663-13fc675b841a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-25T15:38:13.213+03:00  INFO 33953 --- [main] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-25T15:38:13.216+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : SecurityConfig yapılandırması başlatılıyor - 3 ROL SİSTEMİ
+2025-07-25T15:38:13.330+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : Yetkilendirme kuralları yapılandırıldı:
+2025-07-25T15:38:13.331+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - ADMIN: Tüm modüller
+2025-07-25T15:38:13.331+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - USTA: Müşteriler, Siparişler
+2025-07-25T15:38:13.331+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - MUHASEBECI: Müşteriler, Siparişler
+2025-07-25T15:38:13.331+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : SecurityFilterChain yapılandırması tamamlandı - JWT Filter aktif
+2025-07-25T15:38:13.341+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : CORS yapılandırması tamamlandı - Tüm localhost portları ve Netlify için izin verildi
+2025-07-25T15:38:13.398+03:00  INFO 33953 --- [main] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-25T15:38:13.408+03:00  INFO 33953 --- [main] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 6767 (http) with context path '/'
+2025-07-25T15:38:13.415+03:00  INFO 33953 --- [main] [   scheduling-1] e.main.service.CacheEvictionService      : 📊 Dashboard istatistikleri cache'i temizlendi (6 saatlik periyot)
+2025-07-25T15:38:13.415+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.MainApplication           : Started MainApplication in 2.438 seconds (process running for 133.95)
+2025-07-25T15:38:13.415+03:00  INFO 33953 --- [main] [   scheduling-1] e.main.service.CacheEvictionService      : 📋 Son siparişler cache'i temizlendi (saatlik periyot)
+2025-07-25T15:38:13.416+03:00  INFO 33953 --- [main] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-25T15:38:29.049+03:00  INFO 33953 --- [main] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-07-25T15:38:29.059+03:00  INFO 33953 --- [main] [      Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-25T15:38:29.066+03:00  INFO 33953 --- [main] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-25T15:38:29.078+03:00  INFO 33953 --- [main] [      Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-25T15:38:29.083+03:00  INFO 33953 --- [main] [      Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-07-25T15:38:29.088+03:00  INFO 33953 --- [main] [      Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2025-07-25T15:38:29.403+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.MainApplication           : Starting MainApplication using Java 22.0.1 with PID 33953 (/Users/burak/Desktop/Erdal Guda/main/target/classes started by burak in /Users/burak/Desktop/Erdal Guda/main)
+2025-07-25T15:38:29.408+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.MainApplication           : The following 1 profile is active: "development"
+2025-07-25T15:38:29.657+03:00  INFO 33953 --- [main] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-25T15:38:29.686+03:00  INFO 33953 --- [main] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 9 JPA repository interfaces.
+2025-07-25T15:38:29.864+03:00  INFO 33953 --- [main] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 6767 (http)
+2025-07-25T15:38:29.867+03:00  INFO 33953 --- [main] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-25T15:38:29.867+03:00  INFO 33953 --- [main] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-25T15:38:29.882+03:00  INFO 33953 --- [main] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-25T15:38:29.882+03:00  INFO 33953 --- [main] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 459 ms
+2025-07-25T15:38:29.919+03:00  INFO 33953 --- [main] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-25T15:38:29.925+03:00  INFO 33953 --- [main] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-25T15:38:29.946+03:00  INFO 33953 --- [main] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-25T15:38:29.948+03:00  INFO 33953 --- [main] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-07-25T15:38:29.980+03:00  INFO 33953 --- [main] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@426c4c48
+2025-07-25T15:38:29.982+03:00  INFO 33953 --- [main] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-07-25T15:38:30.004+03:00  INFO 33953 --- [main] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 14.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-25T15:38:30.293+03:00  INFO 33953 --- [main] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-25T15:38:30.520+03:00  INFO 33953 --- [main] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-25T15:38:30.988+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Veritabanı migration başlatılıyor...
+2025-07-25T15:38:31.106+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Varsayılan admin kullanıcısı zaten ADMIN rolüne sahip
+2025-07-25T15:38:31.120+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Sistemdeki tüm kullanıcılar ve rolleri:
+2025-07-25T15:38:31.120+03:00  INFO 33953 --- [main] [  restartedMain] e.main.controller.AuthController         : Kullanıcı: erdalguda, Rol: ADMIN
+2025-07-25T15:38:31.453+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.service.OcrService        : 🔄 OCR config'den devre dışı bırakıldı, mock mode aktif
+2025-07-25T15:38:31.530+03:00  WARN 33953 --- [main] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-25T15:38:31.539+03:00  WARN 33953 --- [main] [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 327cb3ce-407f-475b-a311-cc7dcb254ab6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-25T15:38:31.540+03:00  INFO 33953 --- [main] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-25T15:38:31.543+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : SecurityConfig yapılandırması başlatılıyor - 3 ROL SİSTEMİ
+2025-07-25T15:38:31.654+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : Yetkilendirme kuralları yapılandırıldı:
+2025-07-25T15:38:31.655+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - ADMIN: Tüm modüller
+2025-07-25T15:38:31.655+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - USTA: Müşteriler, Siparişler
+2025-07-25T15:38:31.655+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - MUHASEBECI: Müşteriler, Siparişler
+2025-07-25T15:38:31.655+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : SecurityFilterChain yapılandırması tamamlandı - JWT Filter aktif
+2025-07-25T15:38:31.664+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : CORS yapılandırması tamamlandı - Tüm localhost portları ve Netlify için izin verildi
+2025-07-25T15:38:31.707+03:00  INFO 33953 --- [main] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-25T15:38:31.724+03:00  INFO 33953 --- [main] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 6767 (http) with context path '/'
+2025-07-25T15:38:31.730+03:00  INFO 33953 --- [main] [   scheduling-1] e.main.service.CacheEvictionService      : 📊 Dashboard istatistikleri cache'i temizlendi (6 saatlik periyot)
+2025-07-25T15:38:31.731+03:00  INFO 33953 --- [main] [   scheduling-1] e.main.service.CacheEvictionService      : 📋 Son siparişler cache'i temizlendi (saatlik periyot)
+2025-07-25T15:38:31.731+03:00  INFO 33953 --- [main] [  restartedMain] erdalguda.main.MainApplication           : Started MainApplication in 2.474 seconds (process running for 152.266)
+2025-07-25T15:38:31.732+03:00  INFO 33953 --- [main] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:42 min
+[INFO] Finished at: 2025-07-25T15:38:38+03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.4.5:run (default-cli) on project main: Process terminated with exit code: 137 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

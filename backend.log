@@ -1,0 +1,114 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------------< erdalguda:main >---------------------------
+[INFO] Building main 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.4.5:run (default-cli) > test-compile @ main >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ main ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ main ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ main ---
+[INFO] skip non existing resourceDirectory /Users/burak/Desktop/Erdal Guda/main/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ main ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.4.5:run (default-cli) < test-compile @ main <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.4.5:run (default-cli) @ main ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2025-07-25T15:22:11.297+03:00  INFO 15091 --- [main] [  restartedMain] erdalguda.main.MainApplication           : Starting MainApplication using Java 22.0.1 with PID 15091 (/Users/burak/Desktop/Erdal Guda/main/target/classes started by burak in /Users/burak/Desktop/Erdal Guda/main)
+2025-07-25T15:22:11.299+03:00  INFO 15091 --- [main] [  restartedMain] erdalguda.main.MainApplication           : The following 1 profile is active: "development"
+2025-07-25T15:22:11.363+03:00  INFO 15091 --- [main] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-25T15:22:11.364+03:00  INFO 15091 --- [main] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-25T15:22:12.125+03:00  INFO 15091 --- [main] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-25T15:22:12.288+03:00  INFO 15091 --- [main] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 9 JPA repository interfaces.
+2025-07-25T15:22:12.939+03:00  INFO 15091 --- [main] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 6767 (http)
+2025-07-25T15:22:12.950+03:00  INFO 15091 --- [main] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-25T15:22:12.950+03:00  INFO 15091 --- [main] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-25T15:22:12.979+03:00  INFO 15091 --- [main] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-25T15:22:12.979+03:00  INFO 15091 --- [main] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1614 ms
+2025-07-25T15:22:13.099+03:00  INFO 15091 --- [main] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-25T15:22:13.124+03:00  INFO 15091 --- [main] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-07-25T15:22:13.140+03:00  INFO 15091 --- [main] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-25T15:22:13.332+03:00  INFO 15091 --- [main] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-25T15:22:13.422+03:00  INFO 15091 --- [main] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-25T15:22:13.553+03:00  INFO 15091 --- [main] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b871f72
+2025-07-25T15:22:13.554+03:00  INFO 15091 --- [main] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-25T15:22:13.606+03:00  INFO 15091 --- [main] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-25T15:22:14.371+03:00  INFO 15091 --- [main] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-25T15:22:14.661+03:00  INFO 15091 --- [main] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-25T15:22:15.065+03:00  INFO 15091 --- [main] [  restartedMain] e.main.controller.AuthController         : Veritabanı migration başlatılıyor...
+2025-07-25T15:22:15.571+03:00  INFO 15091 --- [main] [  restartedMain] e.main.controller.AuthController         : Varsayılan admin kullanıcısı zaten ADMIN rolüne sahip
+2025-07-25T15:22:15.599+03:00  INFO 15091 --- [main] [  restartedMain] e.main.controller.AuthController         : Sistemdeki tüm kullanıcılar ve rolleri:
+2025-07-25T15:22:15.601+03:00  INFO 15091 --- [main] [  restartedMain] e.main.controller.AuthController         : Kullanıcı: erdalguda, Rol: ADMIN
+2025-07-25T15:22:15.734+03:00  INFO 15091 --- [main] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-25T15:22:19.139+03:00  INFO 15091 --- [main] [  restartedMain] erdalguda.main.service.OcrService        : 🔄 OCR config'den devre dışı bırakıldı, mock mode aktif
+2025-07-25T15:22:19.700+03:00  WARN 15091 --- [main] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-25T15:22:19.723+03:00  WARN 15091 --- [main] [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d1bf3579-18d5-49aa-8ad8-6213bea3ec84
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-07-25T15:22:19.726+03:00  INFO 15091 --- [main] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-25T15:22:19.755+03:00  INFO 15091 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : SecurityConfig yapılandırması başlatılıyor - 3 ROL SİSTEMİ
+2025-07-25T15:22:19.960+03:00  INFO 15091 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : Yetkilendirme kuralları yapılandırıldı:
+2025-07-25T15:22:19.960+03:00  INFO 15091 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - ADMIN: Tüm modüller
+2025-07-25T15:22:19.961+03:00  INFO 15091 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - USTA: Müşteriler, Siparişler
+2025-07-25T15:22:19.961+03:00  INFO 15091 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : - MUHASEBECI: Müşteriler, Siparişler
+2025-07-25T15:22:19.961+03:00  INFO 15091 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : SecurityFilterChain yapılandırması tamamlandı - JWT Filter aktif
+2025-07-25T15:22:19.981+03:00  INFO 15091 --- [main] [  restartedMain] erdalguda.main.config.SecurityConfig     : CORS yapılandırması tamamlandı - Tüm localhost portları ve Netlify için izin verildi
+2025-07-25T15:22:20.138+03:00  WARN 15091 --- [main] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-07-25T15:22:20.157+03:00  WARN 15091 --- [main] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-07-25T15:22:20.159+03:00  INFO 15091 --- [main] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-25T15:22:20.162+03:00  INFO 15091 --- [main] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-25T15:22:20.165+03:00  INFO 15091 --- [main] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-25T15:22:20.180+03:00  INFO 15091 --- [main] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-25T15:22:20.192+03:00 ERROR 15091 --- [main] [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 6767 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 6767 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.886 s
+[INFO] Finished at: 2025-07-25T15:22:20+03:00
+[INFO] ------------------------------------------------------------------------
